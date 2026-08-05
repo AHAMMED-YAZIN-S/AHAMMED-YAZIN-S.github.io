@@ -65,7 +65,7 @@
 <h3>LinkedIn</h3>
 
 <p>
-<a href="#" target="_blank">Visit Profile</a>
+<a href="https://www.linkedin.com/in/ahammed-yazin-a569383a9?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Visit Profile</a>
 </p>
 
 </div>
@@ -75,7 +75,7 @@
 <h3>GitHub</h3>
 
 <p>
-<a href="#" target="_blank">View GitHub</a>
+<a href="https://github.com/AHAMMED-YAZIN-S" target="_blank">View GitHub</a>
 </p>
 
 </div>
@@ -88,19 +88,45 @@
 
 <h2>Send a Message</h2>
 
-<form class="contact-form">
+<form class="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="hidden" name="access_key" value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
 
-<input type="email" placeholder="Your Email" required>
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
 
-<input type="text" placeholder="Subject" required>
+<input
+type="email"
+name="email"
+placeholder="Your Email"
+required>
 
-<textarea rows="6" placeholder="Your Message" required></textarea>
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
 
-<button type="submit" class="btn">Send Message</button>
+<textarea
+name="message"
+rows="6"
+placeholder="Your Message"
+required></textarea>
+
+<input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+<button type="submit" class="btn">
+Send Message
+</button>
 
 </form>
+
+<div id="result"></div>
 
 </section>
 
@@ -111,6 +137,33 @@
 </footer>
 
 <script src="js/script.js"></script>
+
+<script>
+const form = document.querySelector(".contact-form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    result.innerHTML = "Sending...";
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+        result.innerHTML = "<p style='color:#22c55e;'>✅ Message sent successfully!</p>";
+        form.reset();
+    } else {
+        result.innerHTML = "<p style='color:red;'>❌ Failed to send message.</p>";
+    }
+});
+</script>
 
 </body>
 </html>
