@@ -236,119 +236,38 @@
         <div class="contact-form-container">
 
 
-            <form class="contact-form"
-                  action="https://api.web3forms.com/submit"
-                  method="POST">
+            <form
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
 
+    <!-- Web3Forms Access Key -->
+    <input
+        type="hidden"
+        name="access_key"
+        value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da"
+    >
 
-                <!-- WEB3FORMS ACCESS KEY -->
+    <input type="text" name="name" placeholder="Enter your name" required>
 
-                <input type="hidden"
-                       name="access_key"
-                       value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
+<input type="email" name="email" placeholder="Enter your email" required>
 
+<input type="text" name="subject" placeholder="What is this about?" required>
 
-                <!-- EMAIL SUBJECT -->
+<textarea
+    name="message"
+    rows="6"
+    placeholder="Write your message..."
+    required
+></textarea>
 
-                <input type="hidden"
-                       name="subject"
-                       value="New Message From Ahammed Yazin Portfolio">
+<button type="submit" class="btn">
+    Send Message
+    <i class="fa-solid fa-paper-plane"></i>
+</button>
 
-
-                <!-- SENDER NAME -->
-
-                <input type="hidden"
-                       name="from_name"
-                       value="Ahammed Yazin Portfolio">
-
-
-
-                <!-- NAME -->
-
-                <div class="form-group">
-
-                    <label>
-                        Your Name
-                    </label>
-
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Enter your name"
-                        required>
-
-                </div>
-
-
-
-                <!-- EMAIL -->
-
-                <div class="form-group">
-
-                    <label>
-                        Your Email
-                    </label>
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required>
-
-                </div>
-
-
-
-                <!-- SUBJECT -->
-
-                <div class="form-group">
-
-                    <label>
-                        Subject
-                    </label>
-
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder="What is this about?"
-                        required>
-
-                </div>
-
-
-
-                <!-- MESSAGE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Message
-                    </label>
-
-                    <textarea
-                        name="message"
-                        rows="6"
-                        placeholder="Write your message..."
-                        required></textarea>
-
-                </div>
-
-
-
-                <!-- SEND BUTTON -->
-
-                <button
-                    type="submit"
-                    class="btn">
-
-                    Send Message
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </button>
-
-
-            </form>
+</form>
 
         </div>
 

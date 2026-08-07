@@ -747,83 +747,8 @@ console.log(
 console.log(
     "Python | Django | Full Stack Development"
 );
-// ==========================================
-// CONTACT FORM - WEB3FORMS
-// ==========================================
-
-const contactForm = document.querySelector(".contact-form");
-
-if (contactForm) {
-
-    contactForm.addEventListener("submit", async function (e) {
-
-        e.preventDefault();
-
-        const button = contactForm.querySelector(".send-btn");
-        const buttonText = button.querySelector("span");
-        const buttonIcon = button.querySelector("i");
-
-        const formData = new FormData(contactForm);
-
-        // Loading state
-        button.disabled = true;
-        buttonText.textContent = "Sending...";
-        buttonIcon.className = "fas fa-spinner fa-spin";
-
-        try {
-
-            const response = await fetch(
-                contactForm.action,
-                {
-                    method: "POST",
-                    body: formData,
-                    headers: {
-                        "Accept": "application/json"
-                    }
-                }
-            );
-
-            const result = await response.json();
-
-            if (response.ok) {
-
-                showFormMessage(
-                    "Message sent successfully! I'll get back to you soon.",
-                    "success"
-                );
-
-                contactForm.reset();
-
-            } else {
-
-                showFormMessage(
-                    result.message || "Something went wrong. Please try again.",
-                    "error"
-                );
-
-            }
-
-        } catch (error) {
-
-            showFormMessage(
-                "Unable to send the message. Please try again later.",
-                "error"
-            );
-
-        }
 
 
-        // Restore button
-        button.disabled = false;
-
-        buttonText.textContent = "Send Message";
-
-        buttonIcon.className =
-            "fas fa-paper-plane";
-
-    });
-
-}
 
 
 // ==========================================
