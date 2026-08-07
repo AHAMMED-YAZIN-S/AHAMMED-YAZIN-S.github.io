@@ -5083,3 +5083,118 @@ footer {
     }
 
 }
+/* ===== CONTACT INPUT THEME ===== */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 18px;
+
+    background: rgba(5, 15, 12, 0.85);
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #84958f;
+}
+
+/* Clicked / active field */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(5, 20, 14, 0.95);
+
+    border-color: #00e676;
+
+    box-shadow: 0 0 20px rgba(0, 230, 118, 0.15);
+}
+
+/* Message box */
+
+.contact-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* Labels */
+
+.contact-form label {
+    color: #dce7e3;
+    font-weight: 600;
+}
+/* =================================
+   PREMIUM CONTACT FORM FIELDS
+================================= */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: rgba(5, 15, 12, 0.75) !important;
+    color: #f1f5f9 !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 14px;
+
+    padding: 16px 18px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8fa39e;
+}
+
+/* When clicking inside the field */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00e676 !important;
+
+    background: rgba(5, 20, 14, 0.9) !important;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 230, 118, 0.08),
+        0 0 25px rgba(0, 230, 118, 0.12);
+}
+
+/* Message box */
+
+.contact-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* Labels */
+
+.contact-form label {
+    display: block;
+
+    color: #d8e4df;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
