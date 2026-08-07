@@ -1,44 +1,436 @@
-.hero-text{
-    animation:slideLeft 1s ease;
+/* =====================================================
+   AHAMMED YAZIN S — PREMIUM ANIMATIONS
+===================================================== */
+
+
+/* =====================================================
+   1. PAGE LOAD
+===================================================== */
+
+body {
+    animation: pageLoad 0.8s ease both;
 }
 
-.hero-image{
-    animation:slideRight 1s ease;
+
+@keyframes pageLoad {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
 
-.card{
-    animation:fadeUp 1s ease;
+
+/* =====================================================
+   2. NAVIGATION ANIMATION
+===================================================== */
+
+.navbar {
+    animation: navDown 0.8s ease both;
 }
 
-@keyframes slideLeft{
-from{
-opacity:0;
-transform:translateX(-50px);
-}
-to{
-opacity:1;
-transform:translateX(0);
-}
+
+@keyframes navDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
-@keyframes slideRight{
-from{
-opacity:0;
-transform:translateX(50px);
-}
-to{
-opacity:1;
-transform:translateX(0);
-}
+
+/* =====================================================
+   3. HERO CONTENT
+===================================================== */
+
+.hero-content {
+    animation: heroLeft 1s ease 0.2s both;
 }
 
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(30px);
+
+@keyframes heroLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
-to{
-opacity:1;
-transform:translateY(0);
+
+
+/* =====================================================
+   4. HERO IMAGE
+===================================================== */
+
+.hero-image {
+    animation: heroRight 1s ease 0.35s both;
 }
+
+
+@keyframes heroRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
+   5. PROFILE FLOATING EFFECT
+===================================================== */
+
+.profile-wrapper {
+    animation:
+        profileFloat 5s ease-in-out infinite;
+}
+
+
+@keyframes profileFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-14px);
+    }
+
+}
+
+
+/* =====================================================
+   6. PROFILE GLOW
+===================================================== */
+
+.profile-glow {
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.12;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.22;
+        transform: scale(1.15);
+    }
+
+}
+
+
+/* =====================================================
+   7. STATUS DOT
+===================================================== */
+
+.status-dot {
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+
+        box-shadow:
+            0 0 8px #22c55e;
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(0.75);
+
+        box-shadow:
+            0 0 18px #22c55e;
+    }
+
+}
+
+
+/* =====================================================
+   8. FLOATING CARD
+===================================================== */
+
+.floating-card {
+    animation: floatingCard 4s ease-in-out infinite;
+}
+
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* =====================================================
+   9. BUTTON HOVER
+===================================================== */
+
+.hero-buttons a {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-buttons a::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.25),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: 0.6s;
+
+}
+
+
+.hero-buttons a:hover::before {
+    left: 130%;
+}
+
+
+/* =====================================================
+   10. SOCIAL ICON HOVER
+===================================================== */
+
+.hero-socials a {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.hero-socials a:hover {
+
+    transform:
+        translateY(-6px)
+        scale(1.05);
+
+}
+
+
+/* =====================================================
+   11. LOGO HOVER
+===================================================== */
+
+.logo span {
+
+    display: inline-block;
+
+    transition: 0.3s;
+
+}
+
+
+.logo:hover span {
+
+    transform:
+        rotate(15deg)
+        scale(1.2);
+
+}
+
+
+/* =====================================================
+   12. NAV LINK HOVER
+===================================================== */
+
+.navbar ul li a {
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.navbar ul li a:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =====================================================
+   13. HERO BACKGROUND GLOW
+===================================================== */
+
+.hero::before {
+
+    animation:
+        backgroundGlowOne 8s ease-in-out infinite;
+
+}
+
+
+@keyframes backgroundGlowOne {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(50px, -30px);
+    }
+
+}
+
+
+.hero::after {
+
+    animation:
+        backgroundGlowTwo 10s ease-in-out infinite;
+
+}
+
+
+@keyframes backgroundGlowTwo {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-50px, 30px);
+    }
+
+}
+
+
+/* =====================================================
+   14. IMAGE BORDER ANIMATION
+===================================================== */
+
+.profile-wrapper::before {
+
+    animation:
+        borderPulse 4s ease-in-out infinite;
+
+}
+
+
+@keyframes borderPulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+
+}
+
+
+/* =====================================================
+   15. MOBILE MENU ANIMATION
+===================================================== */
+
+.navbar ul.mobile-active {
+
+    animation:
+        menuOpen 0.35s ease both;
+
+}
+
+
+@keyframes menuOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   16. REDUCE ANIMATION FOR USERS
+      WHO PREFER REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+
+    }
+
 }

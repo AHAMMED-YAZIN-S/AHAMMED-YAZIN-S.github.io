@@ -1,130 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Resume | Ahammed Yazin S</title>
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animation.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Resume of Ahammed Yazin S - Python Full Stack Developer">
+
+    <title>Resume | Ahammed Yazin S</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animation.css">
+
 </head>
+
 
 <body>
 
-<header>
-<nav>
 
-<h2 class="logo">YAZIN</h2>
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+    <header>
 
-</nav>
-</header>
+        <nav class="navbar">
 
-<section class="skills">
 
-<h2 style="margin-top:120px;">Resume</h2>
+            <a href="index.html"
+               class="logo">
 
-<div class="skill-box">
+                YAZIN<span>.</span>
 
-<div class="card">
-<h3>Career Objective</h3>
+            </a>
 
-<p>
-Motivated and detail-oriented BCA graduate seeking an entry-level
-Python Full Stack Developer role where I can contribute, learn,
-and build scalable web applications.
-</p>
 
-</div>
+            <ul>
 
-<div class="card">
-<h3>Education</h3>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-<p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
 
-<p>University Institute of Technology</p>
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
 
-<p>Kerala University</p>
+                <li>
+                    <a href="resume.html"
+                       class="active">
+                        Resume
+                    </a>
+                </li>
 
-</div>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-<div class="card">
+            </ul>
 
-<h3>Technical Skills</h3>
 
-<p>✔ Python</p>
-<p>✔ Django</p>
-<p>✔ HTML5</p>
-<p>✔ CSS3</p>
-<p>✔ JavaScript</p>
-<p>✔ MySQL</p>
-<p>✔ Git & GitHub</p>
+            <button id="theme-toggle"
+                    class="theme-btn"
+                    aria-label="Toggle theme">
 
-</div>
+                <i class="fas fa-moon"></i>
 
-<div class="card">
+            </button>
 
-<h3>Projects</h3>
 
-<p>• GST Verification System</p>
-<p>• AI Medical Advisor</p>
-<p>• Bank ATM Management System</p>
+            <button id="menu-btn"
+                    class="menu-btn"
+                    aria-label="Open menu">
 
-</div>
+                <i class="fas fa-bars"></i>
 
-<div class="card">
+            </button>
 
-<h3>Languages</h3>
+        </nav>
 
-<p>English</p>
-<p>Malayalam</p>
+    </header>
 
-</div>
 
-<div class="card">
 
-<h3>Strengths</h3>
+    <!-- ==========================================
+         RESUME PAGE
+    =========================================== -->
 
-<p>Problem Solving</p>
-<p>Teamwork</p>
-<p>Communication</p>
-<p>Quick Learner</p>
+    <main>
 
-</div>
 
-</div>
+        <!-- Resume Heading -->
 
-<br><br>
+        <section class="resume-hero">
 
-<div style="text-align:center;">
 
-<a href="assets/resume.pdf" class="btn" download>
+            <div class="page-heading">
 
-📄 Download Resume
+                <span class="section-label">
+                    MY PROFILE
+                </span>
 
-</a>
+                <h1>
 
-</div>
+                    Professional
+                    <span>Resume</span>
 
-</section>
+                </h1>
 
-<footer>
+                <p>
 
-<p>© 2026 Ahammed Yazin S. All Rights Reserved.</p>
+                    A quick overview of my education,
+                    technical skills, projects and
+                    development journey.
 
-</footer>
+                </p>
 
-<script src="js/script.js"></script>
+            </div>
+
+
+            <div class="resume-actions">
+
+                <button class="btn"
+                        onclick="window.print()">
+
+                    <i class="fas fa-print"></i>
+
+                    Print Resume
+
+                </button>
+
+
+                <a href="assets/resume.pdf"
+                   class="btn-outline"
+                   download>
+
+                    <i class="fas fa-download"></i>
+
+                    Download PDF
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             RESUME CARD
+        =========================================== -->
+
+        <section class="resume-section">
+
+
+            <div class="resume-paper">
+
+
+                <!-- ==================================
+                     PROFILE HEADER
+                =================================== -->
+
+                <div class="resume-header">
+
+
+                    <div class="resume-profile">
+
+
+                        <div class="resume-photo">
+
+                            <img src="images/profile.jpg"
+                                 alt="Ahammed Yazin S">
+
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Ahammed Yazin S
+                            </h2>
+
+                            <h3>
+                                Python Full Stack Developer
+                            </h3>
+
+                            <p>
+
+                                BCA Graduate • Python • Django
+                                • Web Development
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="resume-contact">
+
+
+                        <a href="mailto:yazinamd10@gmail.com">
+
+                            <i class="fas fa-envelope"></i>
+
+                            yazinamd10@gmail.com
+
+                        </a>
+
+
+                        <a href="tel:+917560842810">
+
+                            <i class="fas fa-phone"></i>
+
+                            +91 7560842810
+
+                        </a>
+
+
+                        <span>
+
+                            <i class="fas fa-location-dot"></i>
+
+                            Alappuzha, Kerala, India
+
+                        </span>
+
+
+                        <a href="https://github.com/AHAMMED-YAZIN-S"
+                           target="_blank">
+
+                            <i class="fab fa-github"></i>
+
+                            GitHub
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     OBJECTIVE
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-user"></i>
+
+                        <h3>
+                            Career Objective
+                        </h3>
+
+                    </div>
+
+
+                    <p>
+
+                        Motivated BCA Graduate with a strong
+                        interest in Python development and
+                        full stack web development. Skilled
+                        in Python, Django, HTML, CSS,
+                        JavaScript and MySQL, with a passion
+                        for building practical web applications
+                        and solving real-world problems.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     EDUCATION
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-graduation-cap"></i>
+
+                        <h3>
+                            Education
+                        </h3>
+
+                    </div>
+
+
+                    <div class="resume-item">
+
+
+                        <div class="resume-item-top">
+
+                            <h4>
+                                Bachelor of Computer Applications
+                            </h4>
+
+                            <span>
+                                BCA
+                            </span>
+
+                        </div>
+
+
+                        <h5>
+                            University Institute of Technology
+                        </h5>
+
+
+                        <p>
+
+                            Studied programming,
+                            data structures,
+                            object-oriented programming,
+                            databases, software development
+                            and web technologies.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     TECHNICAL SKILLS
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-code"></i>
+
+                        <h3>
+                            Technical Skills
+                        </h3>
+
+                    </div>
+
+
+                    <div class="resume-skills">
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 90%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                Django
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 82%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                HTML / CSS
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 88%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 72%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                MySQL
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 78%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-skill">
+
+                            <span>
+                                Git / GitHub
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div style="width: 70%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     PROJECTS
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-laptop-code"></i>
+
+                        <h3>
+                            Projects
+                        </h3>
+
+                    </div>
+
+
+                    <!-- Project -->
+
+                    <div class="resume-project">
+
+
+                        <div>
+
+                            <h4>
+                                AI Medical Advisor
+                            </h4>
+
+                            <span>
+                                Python • Django • MySQL
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            Healthcare web application with
+                            AI chatbot assistance, doctor
+                            appointment booking, medicine
+                            ordering and role-based
+                            management.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <!-- Project -->
+
+                    <div class="resume-project">
+
+
+                        <div>
+
+                            <h4>
+                                GST Verification System
+                            </h4>
+
+                            <span>
+                                Python • Django • MySQL
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            Web-based system designed to
+                            manage users, administrators
+                            and shops through a structured
+                            verification workflow.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <!-- Project -->
+
+                    <div class="resume-project">
+
+
+                        <div>
+
+                            <h4>
+                                Bank ATM Management System
+                            </h4>
+
+                            <span>
+                                Python • Django • Database
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            Banking application implementing
+                            authentication, deposits,
+                            withdrawals, transfers and
+                            transaction management.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     TOOLS
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-toolbox"></i>
+
+                        <h3>
+                            Tools & Technologies
+                        </h3>
+
+                    </div>
+
+
+                    <div class="resume-tags">
+
+                        <span>
+                            Visual Studio Code
+                        </span>
+
+                        <span>
+                            Git
+                        </span>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                        <span>
+                            MySQL Workbench
+                        </span>
+
+                        <span>
+                            Django
+                        </span>
+
+                        <span>
+                            HTML5
+                        </span>
+
+                        <span>
+                            CSS3
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     LANGUAGES
+                =================================== -->
+
+                <div class="resume-block">
+
+
+                    <div class="resume-title">
+
+                        <i class="fas fa-language"></i>
+
+                        <h3>
+                            Languages
+                        </h3>
+
+                    </div>
+
+
+                    <div class="language-list">
+
+                        <span>
+                            Malayalam
+                        </span>
+
+                        <span>
+                            English
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Ahammed Yazin S.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

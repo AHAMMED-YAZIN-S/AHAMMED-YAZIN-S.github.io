@@ -1,95 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHAMMED Yazin S | Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Ahammed Yazin S - Python Full Stack Developer Portfolio">
+
+    <title>Ahammed Yazin S | Python Full Stack Developer</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- Website CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animation.css">
+
 </head>
+
 
 <body>
 
-<header>
-    <nav>
-        <h2 class="logo">YAZIN</h2>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- =================================
+         NAVIGATION
+    ================================== -->
 
-<section class="hero">
+    <header>
 
-    <div class="hero-text">
+        <nav class="navbar">
 
-        <h3>Hello, I'm</h3>
+            <a href="index.html"
+               class="logo">
 
-        <h1>Ahammed Yazin S</h1>
+                YAZIN<span>.</span>
 
-        <h2>Python Full Stack Developer</h2>
+            </a>
+
+
+            <ul>
+
+                <li>
+                    <a href="index.html"
+                       class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <button id="theme-toggle"
+                    class="theme-btn">
+
+                <i class="fas fa-moon"></i>
+
+            </button>
+
+
+            <button id="menu-btn"
+                    class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =================================
+         HERO SECTION
+    ================================== -->
+
+    <main>
+
+        <section class="hero">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+
+                <div class="availability">
+
+                    <span class="status-dot"></span>
+
+                    Available for opportunities
+
+                </div>
+
+
+                <p class="hero-small-text">
+
+                    👋 Hello, I'm
+
+                </p>
+
+
+                <h1>
+
+                    Ahammed
+
+                    <span>Yazin S.</span>
+
+                </h1>
+
+
+                <h2>
+
+                    Python Full Stack Developer
+
+                </h2>
+
+
+                <p class="hero-description">
+
+                    Passionate BCA Graduate focused on
+                    building modern, responsive and
+                    scalable web applications using
+                    Python, Django, JavaScript and MySQL.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <a href="projects.html"
+                       class="btn">
+
+                        <i class="fas fa-code"></i>
+
+                        View Projects
+
+                    </a>
+
+
+                    <a href="resume.html"
+                       class="btn-outline">
+
+                        <i class="fas fa-file-lines"></i>
+
+                        View Resume
+
+                    </a>
+
+
+                </div>
+
+
+                <div class="hero-socials">
+
+
+                    <a href="https://github.com/AHAMMED-YAZIN-S"
+                       target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/ahammed-yazin-a569383a9"
+                       target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+
+                    <a href="mailto:yazinamd10@gmail.com">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-image">
+
+
+                <div class="profile-glow"></div>
+
+
+                <div class="profile-wrapper">
+
+                    <img src="images/profile.jpg"
+                         alt="Ahammed Yazin S">
+
+                </div>
+
+
+                <div class="floating-card">
+
+                    <i class="fab fa-python"></i>
+
+                    <div>
+
+                        <strong>Python</strong>
+
+                        <small>Developer</small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
 
         <p>
-            Passionate BCA Graduate with strong knowledge in Python,
-            Django, HTML, CSS, JavaScript and MySQL.
-            I love building modern web applications and solving real-world problems.
+
+            © 2026 Ahammed Yazin S.
+            All Rights Reserved.
+
         </p>
 
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="resume.html" class="btn-outline">Resume</a>
+    </footer>
 
-    </div>
 
-    <div class="hero-image">
 
-        <img src="images/profile.jpg" alt="Profile">
+    <!-- JavaScript -->
 
-    </div>
-
-</section>
-
-<section class="skills">
-
-<h2>Technical Skills</h2>
-
-<div class="skill-box">
-
-<div class="card">Python</div>
-
-<div class="card">Django</div>
-
-<div class="card">HTML5</div>
-
-<div class="card">CSS3</div>
-
-<div class="card">JavaScript</div>
-
-<div class="card">MySQL</div>
-
-<div class="card">Git</div>
-
-<div class="card">GitHub</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 Ahammed Yazin S. All Rights Reserved.</p>
-
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

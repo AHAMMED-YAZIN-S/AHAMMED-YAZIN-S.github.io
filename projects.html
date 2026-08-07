@@ -1,115 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Projects | Ahammed Yazin S</title>
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animation.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Projects by Ahammed Yazin S - Python Full Stack Developer">
+
+    <title>Projects | Ahammed Yazin S</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animation.css">
+
 </head>
+
 
 <body>
 
-<header>
-<nav>
 
-<h2 class="logo">YAZIN</h2>
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+    <header>
 
-</nav>
-</header>
+        <nav class="navbar">
 
-<section class="skills">
 
-<h2 style="margin-top:120px;">My Projects</h2>
+            <a href="index.html"
+               class="logo">
 
-<div class="skill-box">
+                YAZIN<span>.</span>
 
-<div class="card">
+            </a>
 
-<h3>GST Verification System</h3>
 
-<p>
-A Django-based web application that allows shops to generate unique bill numbers.
-Customers can verify whether a bill is genuine using the verification portal.
-</p>
+            <ul>
 
-<br>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-<strong>Technology</strong>
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
 
-<p>Python • Django • HTML • CSS • JavaScript • MySQL</p>
+                <li>
+                    <a href="projects.html"
+                       class="active">
+                        Projects
+                    </a>
+                </li>
 
-<br>
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
 
-<a href="#" class="btn">GitHub</a>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-</div>
+            </ul>
 
-<div class="card">
 
-<h3>AI Medical Advisor</h3>
+            <button id="theme-toggle"
+                    class="theme-btn"
+                    aria-label="Toggle theme">
 
-<p>
-A healthcare platform where users can consult doctors, receive AI-assisted health guidance,
-book appointments, and manage medicine requests.
-</p>
+                <i class="fas fa-moon"></i>
 
-<br>
+            </button>
 
-<strong>Technology</strong>
 
-<p>Python • Django • AI • MySQL</p>
+            <button id="menu-btn"
+                    class="menu-btn"
+                    aria-label="Open menu">
 
-<br>
+                <i class="fas fa-bars"></i>
 
-<a href="#" class="btn">GitHub</a>
+            </button>
 
-</div>
+        </nav>
 
-<div class="card">
+    </header>
 
-<h3>Bank ATM Management System</h3>
 
-<p>
-A banking application supporting account creation, deposits, withdrawals,
-money transfers, and transaction history.
-</p>
 
-<br>
+    <!-- ==========================================
+         PROJECT HERO
+    =========================================== -->
 
-<strong>Technology</strong>
+    <main>
 
-<p>Python • Django • SQLite</p>
 
-<br>
+        <section class="projects-hero">
 
-<a href="#" class="btn">GitHub</a>
 
-</div>
+            <div class="page-heading">
 
-</div>
+                <span class="section-label">
+                    MY WORK
+                </span>
 
-</section>
+                <h1>
 
-<footer>
+                    Featured
+                    <span>Projects</span>
 
-<p>© 2026 Ahammed Yazin S. All Rights Reserved.</p>
+                </h1>
 
-</footer>
+                <p>
 
-<script src="js/script.js"></script>
+                    A selection of projects I've built
+                    while learning, experimenting and
+                    solving real-world problems.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PROJECTS
+        =========================================== -->
+
+        <section class="projects-section">
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================
+                     PROJECT 1
+                ================================== -->
+
+                <article class="project-card featured-project reveal">
+
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="fas fa-heart-pulse"></i>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+
+                        <span class="project-type">
+
+                            FULL STACK / AI
+
+                        </span>
+
+
+                        <h2>
+
+                            AI Medical Advisor
+
+                        </h2>
+
+
+                        <p>
+
+                            A healthcare-focused web
+                            application designed to connect
+                            users with doctors and pharmacies
+                            while providing an AI-powered
+                            medical assistance experience.
+
+                        </p>
+
+
+                        <ul class="project-features">
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                AI chatbot assistance
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Doctor appointment booking
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Medicine ordering workflow
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Admin management system
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tech-stack">
+
+                            <span>Python</span>
+
+                            <span>Django</span>
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+
+                            <span>MySQL</span>
+
+                        </div>
+
+
+                        <div class="project-buttons">
+
+                            <a href="#"
+                               class="project-btn">
+
+                                <i class="fab fa-github"></i>
+
+                                GitHub
+
+                            </a>
+
+
+                            <a href="#"
+                               class="project-btn project-demo">
+
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =================================
+                     PROJECT 2
+                ================================== -->
+
+                <article class="project-card reveal">
+
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="fas fa-receipt"></i>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+
+                        <span class="project-type">
+
+                            WEB APPLICATION
+
+                        </span>
+
+
+                        <h2>
+
+                            GST Verification System
+
+                        </h2>
+
+
+                        <p>
+
+                            A web-based GST verification
+                            platform designed to manage
+                            users, administrators and shops
+                            through a structured application
+                            workflow.
+
+                        </p>
+
+
+                        <ul class="project-features">
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                User management
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Admin dashboard
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Shop verification
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Database management
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tech-stack">
+
+                            <span>Python</span>
+
+                            <span>Django</span>
+
+                            <span>MySQL</span>
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                        </div>
+
+
+                        <div class="project-buttons">
+
+                            <a href="#"
+                               class="project-btn">
+
+                                <i class="fab fa-github"></i>
+
+                                GitHub
+
+                            </a>
+
+
+                            <a href="#"
+                               class="project-btn project-demo">
+
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =================================
+                     PROJECT 3
+                ================================== -->
+
+                <article class="project-card reveal">
+
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="fas fa-building-columns"></i>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+
+                        <span class="project-type">
+
+                            DJANGO / DATABASE
+
+                        </span>
+
+
+                        <h2>
+
+                            Bank ATM Management System
+
+                        </h2>
+
+
+                        <p>
+
+                            A banking application that
+                            provides common ATM operations
+                            through a clean web interface
+                            backed by Django and database
+                            management.
+
+                        </p>
+
+
+                        <ul class="project-features">
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                User authentication
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Deposit & withdrawal
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Money transfer
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Transaction history
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tech-stack">
+
+                            <span>Python</span>
+
+                            <span>Django</span>
+
+                            <span>SQLite</span>
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-buttons">
+
+                            <a href="#"
+                               class="project-btn">
+
+                                <i class="fab fa-github"></i>
+
+                                GitHub
+
+                            </a>
+
+
+                            <a href="#"
+                               class="project-btn project-demo">
+
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                                Live Demo
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             MORE PROJECTS CTA
+        =========================================== -->
+
+        <section class="projects-cta reveal">
+
+
+            <div>
+
+                <span class="section-label">
+                    MORE ON GITHUB
+                </span>
+
+
+                <h2>
+
+                    Interested in my
+                    <span>other work?</span>
+
+                </h2>
+
+
+                <p>
+
+                    Check out my GitHub profile for
+                    more experiments, learning projects
+                    and source code.
+
+                </p>
+
+            </div>
+
+
+            <a href="https://github.com/AHAMMED-YAZIN-S"
+               target="_blank"
+               class="btn">
+
+                <i class="fab fa-github"></i>
+
+                Visit GitHub
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Ahammed Yazin S.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
