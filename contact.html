@@ -2,225 +2,387 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Ahammed Yazin S</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <!-- Main CSS -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+          href="css/style.css">
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet"
+          href="css/animation.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 
 <body>
 
+
+<!-- ============================= -->
+<!-- NAVIGATION -->
+<!-- ============================= -->
+
 <header>
-    <nav class="navbar">
 
-        <a href="index.html" class="logo">YAZIN<span>.</span></a>
+    <nav>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+        <div class="logo">
+            YAZIN
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="resume.html">
+                    Resume
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                   class="active">
+                    Contact
+                </a>
+            </li>
+
         </ul>
 
     </nav>
+
 </header>
 
 
+<!-- ============================= -->
+<!-- MAIN -->
+<!-- ============================= -->
+
 <main>
 
-    <section class="contact-section">
 
-        <div class="contact-heading">
-            <p class="section-tag">GET IN TOUCH</p>
-
-            <h1>Let's Work <span>Together.</span></h1>
-
-            <p>
-                Have a project, opportunity, or just want to say hello?
-                Send me a message and I'll get back to you.
-            </p>
-        </div>
+<section class="contact-section">
 
 
-        <div class="contact-container">
+    <!-- SECTION TITLE -->
 
-            <!-- Contact Information -->
+    <div class="section-title">
 
-            <div class="contact-info">
+        <span>GET IN TOUCH</span>
 
-                <div class="contact-card">
+        <h1>
+            Let's Work Together
+        </h1>
 
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
+        <p>
+            Have a project, opportunity, or just want to say hello?
+            Send me a message and I'll get back to you.
+        </p>
 
-                    <div>
-                        <h3>Email</h3>
-                        <p>yazinamd10@gmail.com</p>
-                    </div>
-
-                </div>
+    </div>
 
 
-                <div class="contact-card">
 
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
+    <!-- CONTACT CONTAINER -->
 
-                    <div>
-                        <h3>Location</h3>
-                        <p>Alappuzha, Kerala, India</p>
-                    </div>
-
-                </div>
+    <div class="contact-container">
 
 
-                <div class="contact-card">
+        <!-- ============================= -->
+        <!-- CONTACT INFORMATION -->
+        <!-- ============================= -->
 
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-
-                    <div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/ahammed-yazin-a569383a9/"
-                            target="_blank">
-                            View Profile
-                        </a>
-                    </div>
-
-                </div>
+        <div class="contact-info">
 
 
-                <div class="contact-card">
+            <!-- EMAIL -->
 
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
+            <div class="contact-card">
 
-                    <div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/AHAMMED-YAZIN-S"
-                            target="_blank">
-                            View GitHub
-                        </a>
-                    </div>
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        yazinamd10@gmail.com
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- Contact Form -->
 
-            <div class="contact-form-box">
+            <!-- LOCATION -->
 
-                <form class="contact-form"
-                    action="https://api.web3forms.com/submit"
-                    method="POST">
+            <div class="contact-card">
 
-                    <input type="hidden"
-                        name="access_key"
-                        value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
+                <i class="fa-solid fa-location-dot"></i>
 
-                    <input type="hidden"
+                <div>
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        Alappuzha, Kerala, India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LINKEDIN -->
+
+            <div class="contact-card">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+                <div>
+
+                    <h3>
+                        LinkedIn
+                    </h3>
+
+                    <a href="https://www.linkedin.com/in/ahammed-yazin-a569383a/"
+                       target="_blank">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GITHUB -->
+
+            <div class="contact-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <div>
+
+                    <h3>
+                        GitHub
+                    </h3>
+
+                    <a href="https://github.com/AHAMMED-YAZIN-S"
+                       target="_blank">
+
+                        View GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- CONTACT FORM -->
+        <!-- ============================= -->
+
+        <div class="contact-form-container">
+
+
+            <form class="contact-form"
+                  action="https://api.web3forms.com/submit"
+                  method="POST">
+
+
+                <!-- WEB3FORMS ACCESS KEY -->
+
+                <input type="hidden"
+                       name="access_key"
+                       value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
+
+
+                <!-- EMAIL SUBJECT -->
+
+                <input type="hidden"
+                       name="subject"
+                       value="New Message From Ahammed Yazin Portfolio">
+
+
+                <!-- SENDER NAME -->
+
+                <input type="hidden"
+                       name="from_name"
+                       value="Ahammed Yazin Portfolio">
+
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label>
+                        Your Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-group">
+
+                    <label>
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
                         name="subject"
-                        value="New Portfolio Contact Message">
+                        placeholder="What is this about?"
+                        required>
 
-                    <input type="hidden"
-                        name="from_name"
-                        value="Ahammed Yazin Portfolio">
-
-
-                    <div class="form-group">
-
-                        <label>Your Name</label>
-
-                        <input type="text"
-                            name="name"
-                            placeholder="Enter your name"
-                            required>
-
-                    </div>
+                </div>
 
 
-                    <div class="form-group">
 
-                        <label>Your Email</label>
+                <!-- MESSAGE -->
 
-                        <input type="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required>
+                <div class="form-group">
 
-                    </div>
+                    <label>
+                        Message
+                    </label>
 
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
 
-                    <div class="form-group">
-
-                        <label>Subject</label>
-
-                        <input type="text"
-                            name="subject"
-                            placeholder="What is this about?"
-                            required>
-
-                    </div>
+                </div>
 
 
-                    <div class="form-group">
 
-                        <label>Message</label>
+                <!-- SEND BUTTON -->
 
-                        <textarea name="message"
-                            rows="6"
-                            placeholder="Write your message..."
-                            required></textarea>
+                <button
+                    type="submit"
+                    class="btn">
 
-                    </div>
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
 
 
-                    <button type="submit" class="btn">
-
-                        Send Message
-
-                        <i class="fa-solid fa-paper-plane"></i>
-
-                    </button>
-
-                </form>
-
-            </div>
+            </form>
 
         </div>
 
-    </section>
+
+    </div>
+
+
+</section>
+
 
 </main>
 
 
+
+<!-- ============================= -->
+<!-- FOOTER -->
+<!-- ============================= -->
+
 <footer>
 
     <p>
-        © 2026 Ahammed Yazin S. All Rights Reserved.
+        © 2026 Ahammed Yazin S.
+        All Rights Reserved.
     </p>
 
 </footer>
 
 
+
+<!-- JAVASCRIPT -->
+
 <script src="js/script.js"></script>
 
+
 </body>
+
 </html>
