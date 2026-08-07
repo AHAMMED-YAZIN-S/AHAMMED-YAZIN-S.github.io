@@ -1,144 +1,226 @@
-<!-- ==================================
-     MESSAGE FORM
-=================================== -->
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="contact-form-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="form-header">
+    <title>Contact | Ahammed Yazin S</title>
 
-        <span>
-            SEND A MESSAGE
-        </span>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
 
-        <i class="fas fa-paper-plane"></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    </div>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">YAZIN<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
 
 
-    <form class="contact-form"
-          action="https://api.web3forms.com/submit"
-          method="POST">
+<main>
 
-        <input type="hidden"
-               name="access_key"
-               value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
+    <section class="contact-section">
 
+        <div class="contact-heading">
+            <p class="section-tag">GET IN TOUCH</p>
 
-        <input type="hidden"
-               name="subject"
-               value="New Portfolio Contact Message">
+            <h1>Let's Work <span>Together.</span></h1>
 
-
-        <input type="hidden"
-               name="from_name"
-               value="Ahammed Yazin Portfolio">
+            <p>
+                Have a project, opportunity, or just want to say hello?
+                Send me a message and I'll get back to you.
+            </p>
+        </div>
 
 
-        <!-- Name -->
+        <div class="contact-container">
 
-        <div class="form-group">
+            <!-- Contact Information -->
 
-            <label for="name">
-                Your Name
-            </label>
+            <div class="contact-info">
 
-            <div class="input-box">
+                <div class="contact-card">
 
-                <i class="fas fa-user"></i>
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
 
-                <input type="text"
-                       id="name"
-                       name="name"
-                       placeholder="Enter your name"
-                       required>
+                    <div>
+                        <h3>Email</h3>
+                        <p>yazinamd10@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Alappuzha, Kerala, India</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/ahammed-yazin-a569383a9/"
+                            target="_blank">
+                            View Profile
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/AHAMMED-YAZIN-S"
+                            target="_blank">
+                            View GitHub
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <div class="contact-form-box">
+
+                <form class="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST">
+
+                    <input type="hidden"
+                        name="access_key"
+                        value="0582ddb2-94e3-4b0f-89e7-51b82fb4e9da">
+
+                    <input type="hidden"
+                        name="subject"
+                        value="New Portfolio Contact Message">
+
+                    <input type="hidden"
+                        name="from_name"
+                        value="Ahammed Yazin Portfolio">
+
+
+                    <div class="form-group">
+
+                        <label>Your Name</label>
+
+                        <input type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Your Email</label>
+
+                        <input type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Subject</label>
+
+                        <input type="text"
+                            name="subject"
+                            placeholder="What is this about?"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Message</label>
+
+                        <textarea name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+
+                        Send Message
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
 
             </div>
 
         </div>
 
+    </section>
 
-        <!-- Email -->
-
-        <div class="form-group">
-
-            <label for="email">
-                Your Email
-            </label>
-
-            <div class="input-box">
-
-                <i class="fas fa-envelope"></i>
-
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="Enter your email"
-                       required>
-
-            </div>
-
-        </div>
+</main>
 
 
-        <!-- Subject -->
+<footer>
 
-        <div class="form-group">
+    <p>
+        © 2026 Ahammed Yazin S. All Rights Reserved.
+    </p>
 
-            <label for="message-subject">
-                Subject
-            </label>
-
-            <div class="input-box">
-
-                <i class="fas fa-heading"></i>
-
-                <input type="text"
-                       id="message-subject"
-                       name="message_subject"
-                       placeholder="What is this about?"
-                       required>
-
-            </div>
-
-        </div>
+</footer>
 
 
-        <!-- Message -->
+<script src="js/script.js"></script>
 
-        <div class="form-group">
-
-            <label for="message">
-                Message
-            </label>
-
-            <div class="input-box textarea-box">
-
-                <i class="fas fa-message"></i>
-
-                <textarea id="message"
-                          name="message"
-                          rows="6"
-                          placeholder="Write your message..."
-                          required></textarea>
-
-            </div>
-
-        </div>
-
-
-        <!-- Submit -->
-
-        <button type="submit"
-                class="send-btn">
-
-            <span>
-                Send Message
-            </span>
-
-            <i class="fas fa-paper-plane"></i>
-
-        </button>
-
-    </form>
-
-</div>
+</body>
+</html>
