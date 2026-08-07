@@ -1004,13 +1004,14 @@ footer p {
     }
 
 
-    .hero-image {
-
-        order: 1;
-
-        min-height: 430px;
-
-    }
+  .hero-image {
+    order: 1;
+    min-height: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
     .hero-description {
@@ -5198,113 +5199,9 @@ footer {
 
     margin-bottom: 10px;
 }
-
 /* ==========================================
    PREMIUM MOBILE RESPONSIVE DESIGN
-========================================== */
-
-@media (max-width: 768px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* NAVIGATION */
-
-    header {
-        width: 100%;
-    }
-
-    nav {
-        padding: 15px 28px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    /* MOBILE HERO */
-
-    .hero {
-        min-height: auto;
-        padding: 60px 20px 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 280px;
-        height: 280px;
-        margin: 0 auto 60px;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .hero-text {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .hero-text h3 {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
-
-    .hero-text h1 {
-        font-size: clamp(42px, 12vw, 64px);
-        line-height: 1;
-        margin-bottom: 20px;
-    }
-
-    .hero-text h2 {
-        font-size: 20px;
-        margin-bottom: 25px;
-    }
-
-    .hero-text p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    /* BUTTONS */
-
-    .hero-text .btn,
-    .hero-text .btn-outline {
-        width: 100%;
-        max-width: 410px;
-        box-sizing: border-box;
-        margin: 8px auto;
-        display: block;
-        text-align: center;
-    }
-
-    /* SOCIAL ICONS */
-
-    .social-links {
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    /* FOOTER */
-
-    footer {
-        text-align: center;
-        padding: 30px 20px;
-    }
-}
-/* =========================================
-   MOBILE RESPONSIVE FIX
-   ========================================= */
+   ========================================== */
 
 @media screen and (max-width: 768px) {
 
@@ -5321,7 +5218,8 @@ footer {
         box-sizing: border-box;
     }
 
-    /* Header */
+    /* ================= NAVIGATION ================= */
+
     header,
     nav {
         width: 100%;
@@ -5332,105 +5230,156 @@ footer {
         padding: 18px 20px;
     }
 
-    /* Main content */
-    main,
-    section {
-        width: 100%;
-        max-width: 100%;
+    .logo {
+        font-size: 20px;
     }
 
-    /* Hero */
+    nav ul {
+        display: none;
+    }
+
+    /* ================= HERO ================= */
+
     .hero {
         width: 100%;
         max-width: 100%;
         min-height: auto;
-        padding: 70px 20px 50px;
+
+        padding: 55px 18px 50px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        text-align: center;
     }
 
+    /* ================= PROFILE IMAGE ================= */
+
     .hero-image {
-        width: 100%;
-        max-width: 100%;
+        width: 280px;
+        height: 280px;
+
+        max-width: 80vw;
+        max-height: 80vw;
+
+        margin: 0 auto 55px;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto 50px;
+
+        flex-shrink: 0;
     }
 
     .hero-image img {
-        width: 250px;
-        height: 250px;
-        max-width: 80vw;
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        max-width: 100%;
+        max-height: 100%;
+
+        object-fit: contain;
+        object-position: center;
+
+        display: block;
     }
+
+    /* ================= HERO TEXT ================= */
 
     .hero-text {
         width: 100%;
-        max-width: 100%;
+        max-width: 500px;
+
         padding: 0 5px;
-        text-align: center;
+
         margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .hero-text h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
     }
 
     .hero-text h1 {
         font-size: clamp(38px, 11vw, 52px);
         line-height: 1.05;
+
+        margin-bottom: 20px;
+
         word-break: normal;
     }
 
     .hero-text h2 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.4;
+
+        margin-bottom: 25px;
     }
 
     .hero-text p {
         width: 100%;
         max-width: 500px;
+
         margin: 20px auto;
+
         font-size: 15px;
         line-height: 1.8;
     }
 
-    /* Buttons */
+    /* ================= BUTTONS ================= */
+
     .hero-text .btn,
     .hero-text .btn-outline {
         width: 100%;
         max-width: 390px;
+
         margin: 8px auto;
+
         display: block;
-    }
 
-    /* Social icons */
-    .social-links {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Availability badge */
-    .availability {
-        width: 100%;
-        max-width: 390px;
-        margin: 0 auto 70px;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        max-width: 100%;
         text-align: center;
     }
 
+    /* ================= SOCIAL ICONS ================= */
+
+    .social-links {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-top: 30px;
+    }
+
+    /* ================= AVAILABILITY ================= */
+
+    .availability {
+        width: 100%;
+        max-width: 390px;
+
+        margin: 0 auto 70px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
 }
 
 
-/* =========================================
+/* ==========================================
    EXTRA SMALL PHONES
-   ========================================= */
+   ========================================== */
 
 @media screen and (max-width: 480px) {
 
@@ -5439,18 +5388,29 @@ footer {
     }
 
     .hero {
-        padding: 55px 18px 40px;
+        padding: 50px 18px 40px;
     }
 
+    /* PROFILE IMAGE */
     .hero-image {
+        width: 250px;
+        height: 250px;
+
+        max-width: 75vw;
+        max-height: 75vw;
+
         margin-bottom: 45px;
     }
 
     .hero-image img {
-        width: 230px;
-        height: 230px;
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        object-position: center;
     }
 
+    /* TEXT */
     .hero-text h1 {
         font-size: 42px;
     }
@@ -5464,8 +5424,48 @@ footer {
         line-height: 1.7;
     }
 
+    /* BUTTONS */
     .hero-text .btn,
     .hero-text .btn-outline {
         max-width: 100%;
+    }
+}
+
+/* ==========================================
+   FINAL MOBILE IMAGE FIX
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .hero-image {
+        min-height: 0 !important;
+        height: auto !important;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-wrapper {
+        width: 270px !important;
+        height: 270px !important;
+        max-width: 75vw;
+        max-height: 75vw;
+    }
+
+    .profile-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .profile-wrapper {
+        width: 240px !important;
+        height: 240px !important;
     }
 }
