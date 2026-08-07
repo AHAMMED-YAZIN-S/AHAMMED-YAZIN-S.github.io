@@ -5302,3 +5302,170 @@ footer {
         padding: 30px 20px;
     }
 }
+/* =========================================
+   MOBILE RESPONSIVE FIX
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    header,
+    nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        padding: 18px 20px;
+    }
+
+    /* Main content */
+    main,
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 70px 20px 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 50px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        max-width: 80vw;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(38px, 11vw, 52px);
+        line-height: 1.05;
+        word-break: normal;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .hero-text p {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* Buttons */
+    .hero-text .btn,
+    .hero-text .btn-outline {
+        width: 100%;
+        max-width: 390px;
+        margin: 8px auto;
+        display: block;
+    }
+
+    /* Social icons */
+    .social-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Availability badge */
+    .availability {
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto 70px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        padding: 16px 18px;
+    }
+
+    .hero {
+        padding: 55px 18px 40px;
+    }
+
+    .hero-image {
+        margin-bottom: 45px;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-text .btn,
+    .hero-text .btn-outline {
+        max-width: 100%;
+    }
+}
