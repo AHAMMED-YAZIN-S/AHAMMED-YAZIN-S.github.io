@@ -5198,3 +5198,107 @@ footer {
 
     margin-bottom: 10px;
 }
+
+/* ==========================================
+   PREMIUM MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* NAVIGATION */
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        padding: 15px 28px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* MOBILE HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 60px 20px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto 60px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-text h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(42px, 12vw, 64px);
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* BUTTONS */
+
+    .hero-text .btn,
+    .hero-text .btn-outline {
+        width: 100%;
+        max-width: 410px;
+        box-sizing: border-box;
+        margin: 8px auto;
+        display: block;
+        text-align: center;
+    }
+
+    /* SOCIAL ICONS */
+
+    .social-links {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+        padding: 30px 20px;
+    }
+}
