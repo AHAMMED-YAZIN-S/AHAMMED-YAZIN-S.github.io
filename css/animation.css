@@ -434,3 +434,1758 @@ body {
     }
 
 }
+
+/* =================================
+   GLOBAL ANIMATIONS
+================================= */
+
+
+/* =================================
+   FOOTER ENTRANCE
+================================= */
+
+.footer-container {
+    animation: footerReveal 1s ease both;
+}
+
+@keyframes footerReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =================================
+   FOOTER LOGO
+================================= */
+
+.footer-logo {
+    animation:
+        logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* =================================
+   GREEN GLOW
+================================= */
+
+.footer::before {
+    animation:
+        glowMove 8s ease-in-out infinite;
+}
+
+@keyframes glowMove {
+
+    0% {
+        transform:
+            translateX(-30px)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translateX(80px)
+            scale(1.15);
+    }
+
+    100% {
+        transform:
+            translateX(-30px)
+            scale(1);
+    }
+
+}
+
+
+/* =================================
+   SOCIAL ICONS
+================================= */
+
+.footer-socials a {
+    animation:
+        socialAppear 0.7s ease both;
+}
+
+.footer-socials a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.footer-socials a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.footer-socials a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes socialAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* =================================
+   FOOTER LINKS
+================================= */
+
+.footer-links a {
+    animation:
+        linkAppear 0.6s ease both;
+}
+
+.footer-links a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.footer-links a:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.footer-links a:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.footer-links a:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.footer-links a:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+@keyframes linkAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+/* =================================
+   BUTTON PULSE
+================================= */
+
+.footer-btn {
+    animation:
+        buttonPulse 3s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0
+            rgba(0, 255, 136, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px
+            rgba(0, 255, 136, 0.15);
+    }
+
+}
+
+
+/* =================================
+   BACK TO TOP
+================================= */
+
+.back-to-top i {
+    animation:
+        arrowMove 2s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+/* =================================
+   LANDING PAGE ANIMATIONS
+================================= */
+
+
+/* =================================
+   1. SECTION FADE UP
+================================= */
+
+.home-about,
+.home-skills,
+.home-projects,
+.home-cta {
+    animation: sectionFadeUp 1s ease both;
+}
+
+@keyframes sectionFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   2. SECTION HEADING
+================================= */
+
+.section-heading > span {
+    animation: headingFade 0.8s ease both;
+}
+
+.section-heading h2 {
+    animation: headingFade 0.9s ease 0.15s both;
+}
+
+.section-heading p {
+    animation: headingFade 0.9s ease 0.3s both;
+}
+
+@keyframes headingFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   3. ABOUT CARDS
+================================= */
+
+.about-card {
+    animation: cardReveal 0.8s ease both;
+}
+
+.about-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.about-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.about-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes cardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =================================
+   4. ABOUT ICON
+================================= */
+
+.about-card i {
+    transition: all 0.4s ease;
+}
+
+.about-card:hover i {
+    transform: rotateY(180deg) scale(1.1);
+
+    box-shadow:
+        0 0 25px
+        rgba(0, 255, 136, 0.25);
+}
+
+
+/* =================================
+   5. SKILL CARDS
+================================= */
+
+.skill-card {
+    animation: skillReveal 0.7s ease both;
+}
+
+.skill-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.skill-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skill-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.skill-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.skill-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.skill-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes skillReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   6. SKILL ICON
+================================= */
+
+.skill-card i {
+    transition: all 0.4s ease;
+}
+
+.skill-card:hover i {
+    transform: translateY(-6px) scale(1.15);
+
+    filter:
+        drop-shadow(
+            0 0 10px
+            rgba(0, 255, 136, 0.6)
+        );
+}
+
+
+/* =================================
+   7. PROJECT CARDS
+================================= */
+
+.home-project-card {
+    animation: projectReveal 0.8s ease both;
+}
+
+.home-project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.home-project-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.home-project-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes projectReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   8. PROJECT ICON
+================================= */
+
+.project-icon {
+    transition: all 0.4s ease;
+}
+
+.home-project-card:hover .project-icon {
+    transform:
+        rotate(-5deg)
+        scale(1.08);
+
+    box-shadow:
+        0 0 25px
+        rgba(0, 255, 136, 0.18);
+}
+
+
+/* =================================
+   9. PROJECT NUMBER
+================================= */
+
+.project-number {
+    transition: all 0.3s ease;
+}
+
+.home-project-card:hover .project-number {
+    letter-spacing: 4px;
+}
+
+
+/* =================================
+   10. TECHNOLOGY TAGS
+================================= */
+
+.project-tech span {
+    transition: all 0.3s ease;
+}
+
+.project-tech span:hover {
+    background: #00ff88;
+
+    color: #080b0f;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 255, 136, 0.2);
+}
+
+
+/* =================================
+   11. CTA ANIMATION
+================================= */
+
+.home-cta .cta-content {
+    animation: ctaReveal 1s ease both;
+}
+
+@keyframes ctaReveal {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+
+/* =================================
+   12. CTA GLOW
+================================= */
+
+.cta-content::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    top: -130px;
+    right: -100px;
+
+    background:
+        rgba(0, 255, 136, 0.08);
+
+    border-radius: 50%;
+
+    filter: blur(60px);
+
+    animation: ctaGlow 5s ease-in-out infinite;
+}
+
+@keyframes ctaGlow {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translate(-30px, 30px);
+        opacity: 1;
+    }
+
+}
+
+
+/* =================================
+   13. BUTTON ANIMATION
+================================= */
+
+.section-button .btn,
+.home-cta .btn {
+    transition: all 0.35s ease;
+}
+
+.section-button .btn:hover,
+.home-cta .btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 255, 136, 0.25);
+}
+
+
+/* =================================
+   14. SMOOTH FLOATING
+================================= */
+
+.about-card:nth-child(1) {
+    animation:
+        cardReveal 0.8s ease both,
+        floatingCard 5s ease-in-out 1.2s infinite;
+}
+
+.about-card:nth-child(2) {
+    animation:
+        cardReveal 0.8s ease 0.25s both,
+        floatingCard 5s ease-in-out 1.5s infinite;
+}
+
+.about-card:nth-child(3) {
+    animation:
+        cardReveal 0.8s ease 0.4s both,
+        floatingCard 5s ease-in-out 1.8s infinite;
+}
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* =================================
+   15. REDUCE MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   YAZIN.S PORTFOLIO
+   COMPLETE ANIMATION SYSTEM
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   PAGE LOAD
+========================================================= */
+
+body {
+    animation: pageFadeIn 0.8s ease both;
+}
+
+@keyframes pageFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    animation: navbarDrop 0.8s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes navbarDrop {
+
+    from {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* LOGO */
+
+.logo {
+    animation: logoReveal 0.9s ease 0.15s both;
+}
+
+@keyframes logoReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* NAV LINKS */
+
+.navbar ul li {
+    opacity: 0;
+    animation: navLinkReveal 0.6s ease forwards;
+}
+
+.navbar ul li:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.navbar ul li:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.navbar ul li:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+.navbar ul li:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.navbar ul li:nth-child(5) {
+    animation-delay: 0.65s;
+}
+
+@keyframes navLinkReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* THEME BUTTON */
+
+.theme-btn {
+    animation:
+        buttonAppear
+        0.7s ease
+        0.7s both;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    animation:
+        buttonAppear
+        0.7s ease
+        0.8s both;
+}
+
+@keyframes buttonAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-content {
+    animation:
+        heroContentReveal
+        1s
+        cubic-bezier(.2,.8,.2,1)
+        0.2s
+        both;
+}
+
+@keyframes heroContentReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* AVAILABILITY */
+
+.availability {
+    animation:
+        availabilityReveal
+        0.8s
+        ease
+        0.4s
+        both;
+}
+
+@keyframes availabilityReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* STATUS DOT */
+
+.status-dot {
+    animation:
+        statusPulse
+        1.8s
+        ease-in-out
+        infinite;
+}
+
+@keyframes statusPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0
+            rgba(0, 255, 136, 0.7);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 10px
+            rgba(0, 255, 136, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0
+            rgba(0, 255, 136, 0);
+    }
+
+}
+
+
+/* HELLO TEXT */
+
+.hero-small-text {
+    animation:
+        heroTextReveal
+        0.8s
+        ease
+        0.55s
+        both;
+}
+
+
+/* NAME */
+
+.hero h1 {
+    animation:
+        heroNameReveal
+        1s
+        cubic-bezier(.2,.8,.2,1)
+        0.65s
+        both;
+}
+
+@keyframes heroNameReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(30px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* NAME GREEN PART */
+
+.hero h1 span {
+    display: inline-block;
+
+    animation:
+        nameGlow
+        3s
+        ease-in-out
+        1.5s
+        infinite;
+}
+
+@keyframes nameGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 0
+            rgba(0, 255, 136, 0);
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px
+            rgba(0, 255, 136, 0.35);
+    }
+
+}
+
+
+/* JOB TITLE */
+
+.hero h2 {
+    animation:
+        heroTextReveal
+        0.9s
+        ease
+        0.85s
+        both;
+}
+
+@keyframes heroTextReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    animation:
+        heroTextReveal
+        0.9s
+        ease
+        1s
+        both;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    animation:
+        buttonsReveal
+        0.9s
+        ease
+        1.15s
+        both;
+}
+
+@keyframes buttonsReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(25px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.hero-buttons .btn:hover,
+.hero-buttons .btn-outline:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   HERO SOCIALS
+========================================================= */
+
+.hero-socials {
+    animation:
+        socialReveal
+        0.9s
+        ease
+        1.35s
+        both;
+}
+
+@keyframes socialReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.hero-socials a {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        background 0.3s ease;
+}
+
+.hero-socials a:hover {
+    transform:
+        translateY(-6px)
+        scale(1.12);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image {
+    animation:
+        heroImageReveal
+        1.2s
+        cubic-bezier(.2,.8,.2,1)
+        0.35s
+        both;
+}
+
+@keyframes heroImageReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateX(60px)
+            scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateX(0)
+            scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.profile-wrapper {
+    animation:
+        profileFloat
+        5s
+        ease-in-out
+        1.5s
+        infinite;
+}
+
+@keyframes profileFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* PROFILE HOVER */
+
+.profile-wrapper {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.profile-wrapper:hover {
+    transform:
+        translateY(-10px)
+        scale(1.02);
+}
+
+
+/* =========================================================
+   PROFILE GLOW
+========================================================= */
+
+.profile-glow {
+    animation:
+        profileGlow
+        4s
+        ease-in-out
+        infinite;
+}
+
+@keyframes profileGlow {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.12);
+        opacity: 0.9;
+    }
+
+}
+
+
+/* =========================================================
+   PYTHON FLOATING CARD
+========================================================= */
+
+.floating-card {
+    animation:
+        floatingPython
+        4s
+        ease-in-out
+        1.5s
+        infinite;
+}
+
+@keyframes floatingPython {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            rotate(1deg);
+    }
+
+}
+
+.floating-card i {
+    animation:
+        pythonIconPulse
+        2.5s
+        ease-in-out
+        infinite;
+}
+
+@keyframes pythonIconPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+
+/* =========================================================
+   GENERAL SECTION REVEAL
+========================================================= */
+
+.home-about,
+.home-skills {
+    animation:
+        sectionReveal
+        1s
+        ease
+        both;
+}
+
+@keyframes sectionReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading > span {
+    animation:
+        headingSmallReveal
+        0.8s
+        ease
+        both;
+}
+
+@keyframes headingSmallReveal {
+
+    from {
+        opacity: 0;
+        letter-spacing: 8px;
+    }
+
+    to {
+        opacity: 1;
+        letter-spacing: 3px;
+    }
+
+}
+
+
+.section-heading h2 {
+    animation:
+        headingReveal
+        0.9s
+        ease
+        0.15s
+        both;
+}
+
+@keyframes headingReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.section-heading p {
+    animation:
+        headingParagraph
+        0.9s
+        ease
+        0.3s
+        both;
+}
+
+@keyframes headingParagraph {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT CARDS
+========================================================= */
+
+.about-card {
+    animation:
+        aboutCardReveal
+        0.8s
+        ease
+        both;
+}
+
+.about-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.about-card:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.about-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes aboutCardReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(40px)
+            scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* ABOUT CARD HOVER */
+
+.about-card {
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-card i {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.about-card:hover i {
+    transform:
+        rotateY(180deg)
+        scale(1.1);
+
+    box-shadow:
+        0 0 25px
+        rgba(0, 255, 136, 0.25);
+}
+
+
+/* =========================================================
+   SKILL CARDS
+========================================================= */
+
+.skill-card {
+    animation:
+        skillReveal
+        0.8s
+        ease
+        both;
+}
+
+.skill-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.skill-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.skill-card:nth-child(3) {
+    animation-delay: 0.35s;
+}
+
+.skill-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.skill-card:nth-child(5) {
+    animation-delay: 0.55s;
+}
+
+.skill-card:nth-child(6) {
+    animation-delay: 0.65s;
+}
+
+@keyframes skillReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(35px)
+            scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* SKILL ICON */
+
+.skill-card i {
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.skill-card:hover i {
+    transform:
+        translateY(-8px)
+        scale(1.15);
+
+    filter:
+        drop-shadow(
+            0 0 10px
+            rgba(0, 255, 136, 0.7)
+        );
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    animation:
+        footerReveal
+        1s
+        ease
+        both;
+}
+
+@keyframes footerReveal {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* FOOTER LOGO */
+
+.footer-logo {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform:
+        translateY(-4px)
+        scale(1.03);
+}
+
+
+/* =========================================================
+   FOOTER SOCIALS
+========================================================= */
+
+.footer-socials a {
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.footer-socials a:hover {
+    transform:
+        translateY(-7px)
+        scale(1.1);
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer-links a {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.footer-links a:hover {
+    transform: translateX(7px);
+}
+
+
+/* =========================================================
+   FOOTER BUTTON
+========================================================= */
+
+.footer-btn {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+.footer-btn:hover {
+    transform:
+        translateY(-5px)
+        scale(1.03);
+}
+
+
+/* =========================================================
+   MOBILE MENU ANIMATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .navbar ul {
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease;
+    }
+
+    .menu-btn {
+        transition:
+            transform 0.3s ease;
+    }
+
+    .menu-btn:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+
+/* =========================================================
+   BUTTON ICON ANIMATION
+========================================================= */
+
+.btn i,
+.btn-outline i,
+.footer-btn i {
+    transition:
+        transform 0.3s ease;
+}
+
+.btn:hover i,
+.btn-outline:hover i {
+    transform:
+        translateX(4px);
+}
+
+.footer-btn:hover i {
+    transform:
+        translateX(5px);
+}
+
+
+/* =========================================================
+   IMAGE SHINE
+========================================================= */
+
+.profile-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-wrapper::after {
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+    left: -100%;
+
+    width: 60%;
+    height: 250%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.18),
+            transparent
+        );
+
+    transform: rotate(25deg);
+
+    animation:
+        imageShine
+        5s
+        ease-in-out
+        2s
+        infinite;
+
+    pointer-events: none;
+}
+
+@keyframes imageShine {
+
+    0% {
+        left: -120%;
+    }
+
+    35% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080b0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00e676;
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background: #00ff88;
+    color: #080b0f;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
