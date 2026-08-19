@@ -120,59 +120,29 @@ typeRole();
    2. DARK / LIGHT THEME
 ===================================================== */
 
-const themeButton =
-    document.getElementById(
-        "theme-toggle"
-    );
+const themeButton = document.getElementById("theme-toggle");
 
+function setTheme(theme) {
+    const isLight = theme === "light";
 
-if (themeButton) {
+    document.body.classList.toggle("light-theme", isLight);
 
-    themeButton.addEventListener(
-        "click",
-        () => {
+    const icon = themeButton?.querySelector("i");
 
-            document.body.classList.toggle(
-                "light-theme"
-            );
-
-
-            const icon =
-                themeButton.querySelector("i");
-
-
-            if (
-                document.body.classList.contains(
-                    "light-theme"
-                )
-            ) {
-
-                icon.classList.remove(
-                    "fa-moon"
-                );
-
-                icon.classList.add(
-                    "fa-sun"
-                );
-
-            }
-
-            else {
-
-                icon.classList.remove(
-                    "fa-sun"
-                );
-
-                icon.classList.add(
-                    "fa-moon"
-                );
-
-            }
-
-        }
-    );
-
+    if (icon) {
+        icon.classList.toggle("fa-sun", isLight);
+        icon.classList.toggle("fa-moon", !isLight);
+    }
 }
+
+themeButton?.addEventListener("click", () => {
+    const newTheme = document.body.classList.contains("light-theme")
+        ? "dark"
+        : "light";
+
+    setTheme(newTheme);
+    localStorage.setItem("portfolio-theme", newTheme);
+});
 
 
 
@@ -496,77 +466,13 @@ topButton.addEventListener(
 );
 
 
-
 /* =====================================================
    8. SAVE THEME
 ===================================================== */
 
-const savedTheme =
-    localStorage.getItem(
-        "portfolio-theme"
-    );
+const savedTheme = localStorage.getItem("portfolio-theme");
 
-
-if (savedTheme === "light") {
-
-    document.body.classList.add(
-        "light-theme"
-    );
-
-
-    if (themeButton) {
-
-        const icon =
-            themeButton.querySelector(
-                "i"
-            );
-
-
-        icon.classList.remove(
-            "fa-moon"
-        );
-
-        icon.classList.add(
-            "fa-sun"
-        );
-
-    }
-
-}
-
-
-if (themeButton) {
-
-    themeButton.addEventListener(
-        "click",
-        () => {
-
-            if (
-                document.body.classList.contains(
-                    "light-theme"
-                )
-            ) {
-
-                localStorage.setItem(
-                    "portfolio-theme",
-                    "light"
-                );
-
-            }
-
-            else {
-
-                localStorage.setItem(
-                    "portfolio-theme",
-                    "dark"
-                );
-
-            }
-
-        }
-    );
-
-}
+setTheme(savedTheme || "dark");
 
 
 

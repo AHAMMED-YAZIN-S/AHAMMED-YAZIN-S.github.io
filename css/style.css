@@ -6658,3 +6658,208 @@ footer {
         font-size: 30px;
     }
 }
+
+/* ==========================================
+   LIGHT THEME — KEEP AT THE END OF CSS
+========================================== */
+
+body.light-theme {
+    --bg: #f7faf9;
+    --bg-secondary: #edf5f0;
+    --card: rgba(255, 255, 255, 0.82);
+    --border: rgba(15, 23, 42, 0.13);
+    --text: #14221b;
+    --text-secondary: #52665a;
+    --green: #159947;
+    --green-dark: #0d7a37;
+    --green-light: #087635;
+
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Header & navigation */
+body.light-theme header {
+    background: rgba(247, 250, 249, 0.82);
+    border-bottom-color: rgba(15, 23, 42, 0.09);
+}
+
+body.light-theme .navbar ul li a,
+body.light-theme .hero-socials a {
+    color: #405348;
+}
+
+body.light-theme .theme-btn,
+body.light-theme .menu-btn {
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--text);
+}
+
+/* Text */
+body.light-theme .hero-content h1 span {
+    background: linear-gradient(90deg, #14221b 0%, #159947 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.light-theme .hero-description strong,
+body.light-theme .floating-card strong,
+body.light-theme .section-heading h2,
+body.light-theme .about-card h3,
+body.light-theme .skill-card h3,
+body.light-theme .project-content h3,
+body.light-theme .cta-content h2 {
+    color: var(--text);
+}
+
+/* Cards & sections */
+body.light-theme .floating-card,
+body.light-theme .skill-card,
+body.light-theme .home-project-card,
+body.light-theme .footer,
+body.light-theme .contact-form-container {
+    background: rgba(255, 255, 255, 0.84);
+    border-color: rgba(15, 23, 42, 0.10);
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+body.light-theme .home-skills {
+    background: #edf5f0;
+}
+
+body.light-theme .about-card {
+    background: rgba(255, 255, 255, 0.70);
+    border-color: rgba(21, 153, 71, 0.18);
+}
+
+/* Contact form */
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+    background: #ffffff !important;
+    color: #14221b !important;
+    border-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+body.light-theme .contact-form input::placeholder,
+body.light-theme .contact-form textarea::placeholder {
+    color: #728177;
+}
+
+body.light-theme .contact-form label {
+    color: #32453a;
+}
+
+body.light-theme .contact-form input:focus,
+body.light-theme .contact-form textarea:focus {
+    background: #ffffff !important;
+    border-color: var(--green) !important;
+}
+
+/* Footer */
+body.light-theme .footer,
+body.light-theme footer {
+    color: var(--text);
+    background: #e8f2eb;
+    border-top-color: rgba(21, 153, 71, 0.20);
+}
+
+body.light-theme .footer-logo,
+body.light-theme .footer-links h3,
+body.light-theme .footer-contact h3,
+body.light-theme .footer-bottom strong {
+    color: var(--text);
+}
+
+body.light-theme .footer-brand p,
+body.light-theme .footer-links a,
+body.light-theme .footer-contact p,
+body.light-theme .footer-bottom p {
+    color: #5c7063;
+}
+
+body.light-theme .footer-bottom {
+    border-top-color: rgba(15, 23, 42, 0.10);
+}
+
+/* FIX REMAINING WHITE COLORS IN LIGHT THEME */
+
+body.light-theme,
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme strong,
+body.light-theme .logo,
+body.light-theme .footer-logo,
+body.light-theme .footer-links h3,
+body.light-theme .footer-contact h3,
+body.light-theme .floating-card strong,
+body.light-theme .about-card h3,
+body.light-theme .skill-card h3,
+body.light-theme .project-content h3,
+body.light-theme .cta-content h2,
+body.light-theme .section-heading h2 {
+    color: #14221b;
+}
+
+body.light-theme p,
+body.light-theme small,
+body.light-theme .footer-brand p,
+body.light-theme .footer-links a,
+body.light-theme .footer-contact p,
+body.light-theme .footer-bottom p,
+body.light-theme .about-card p,
+body.light-theme .skill-card p,
+body.light-theme .project-content p,
+body.light-theme .section-heading p,
+body.light-theme .cta-content p {
+    color: #52665a;
+}
+
+body.light-theme .floating-card,
+body.light-theme .skill-card,
+body.light-theme .home-project-card,
+body.light-theme .about-card,
+body.light-theme .contact-form-container,
+body.light-theme .cta-content {
+    background: #ffffff;
+    border-color: rgba(20, 34, 27, 0.12);
+}
+
+/* Keep white text only on green buttons */
+body.light-theme .btn:hover,
+body.light-theme .footer-btn,
+body.light-theme .footer-socials a:hover,
+body.light-theme .back-to-top:hover {
+    color: #ffffff;
+}
+
+/* LIGHT THEME — FOOTER ICONS */
+
+body.light-theme .footer-socials a {
+    color: #245238;
+    border-color: rgba(21, 153, 71, 0.30);
+    background: rgba(255, 255, 255, 0.72);
+}
+
+body.light-theme .footer-socials a i {
+    color: #245238;
+}
+
+body.light-theme .footer-socials a:hover {
+    background: #159947;
+    border-color: #159947;
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+body.light-theme .footer-socials a:hover i {
+    background: transparent;
+    color: #ffffff;
+}
+
+body.light-theme .footer-links a i,
+body.light-theme .footer-contact p i,
+body.light-theme .footer-logo span {
+    color: #159947;
+}
