@@ -1,102 +1,74 @@
-/*
-   HOME PAGE — FINAL MOBILE FIX
-   Load this file AFTER style.css and animation.css.
-   It resolves the conflicting mobile rules in the original stylesheet.
-*/
-
-@media (max-width: 768px) {
-    header { min-height: 72px; }
-
-    .navbar {
-        width: 92%;
-        height: 72px;
-        padding: 0;
-    }
-
-    /* Keep the existing JavaScript menu behaviour, but give the drawer a stable position. */
-    .navbar ul {
-        top: 72px;
-        border-radius: 0 0 16px 16px;
-        box-shadow: 0 18px 35px rgba(0, 0, 0, .24);
-    }
-
+/* FINAL PHONE FIX — load AFTER style.css AND animation.css */
+@media only screen and (max-width: 768px) {
+    /* Stop every earlier mobile/animation rule from keeping desktop hero space. */
     .hero {
-        width: 92%;
-        min-height: 0;
-        margin: 0 auto;
-        padding: 112px 0 60px;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        align-items: center;
-        gap: 36px;
-        text-align: center;
+        width: 92% !important;
+        min-height: 0 !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        padding: 105px 0 56px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 34px !important;
+        text-align: center !important;
     }
 
     .hero-content {
-        order: 1;
-        width: 100%;
-        min-width: 0;
+        order: 1 !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
     }
 
     .hero-image {
-        order: 2;
-        width: 100%;
+        order: 2 !important;
+        position: relative !important;
+        width: 100% !important;
         height: auto !important;
         min-height: 0 !important;
-        margin: 0;
-        display: grid;
-        place-items: center;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transform: none !important;
     }
 
     .availability {
-        width: fit-content;
-        max-width: 100%;
-        margin: 0 auto 22px;
+        width: fit-content !important;
+        max-width: 100% !important;
+        margin: 0 auto 20px !important;
     }
 
     .hero-content h1 {
-        font-size: clamp(42px, 13vw, 58px);
-        letter-spacing: -2px;
-        overflow-wrap: anywhere;
+        font-size: clamp(42px, 13vw, 58px) !important;
+        line-height: 1.04 !important;
+        letter-spacing: -2px !important;
     }
 
-    .hero-content h2 { font-size: clamp(20px, 5.5vw, 25px); }
-
-    .hero-description {
-        max-width: 34rem;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .hero-buttons { justify-content: center; }
+    .hero-content h2 { font-size: 21px !important; }
+    .hero-description { margin: 0 auto !important; font-size: 14px !important; }
+    .hero-buttons, .hero-socials { justify-content: center !important; }
 
     .profile-wrapper {
+        position: relative !important;
         width: min(270px, 72vw) !important;
         height: min(270px, 72vw) !important;
-        max-width: none;
-        max-height: none;
+        margin: 0 !important;
+        transform: none !important;
     }
 
-    .profile-glow {
-        width: min(230px, 62vw);
-        height: min(230px, 62vw);
-    }
-
-    .floating-card { display: none; }
+    .profile-wrapper img { display: block !important; object-fit: cover !important; }
+    .profile-glow { width: min(230px, 62vw) !important; height: min(230px, 62vw) !important; }
+    .floating-card { display: none !important; }
 }
 
-@media (max-width: 420px) {
-    .navbar { width: 90%; }
-    .hero { width: 90%; padding-top: 104px; }
-    .hero-buttons { flex-direction: column; }
-    .hero-buttons a { width: 100%; }
-    .hero-socials { justify-content: center; }
-    .profile-wrapper { width: min(240px, 70vw) !important; height: min(240px, 70vw) !important; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .hero, .hero-content, .hero-image, .profile-wrapper, .profile-glow {
-        animation: none !important;
-        transition: none !important;
-    }
+@media only screen and (max-width: 420px) {
+    .hero { width: 90% !important; padding-top: 96px !important; }
+    .hero-buttons { flex-direction: column !important; }
+    .hero-buttons a { width: 100% !important; }
+    .profile-wrapper { width: min(235px, 70vw) !important; height: min(235px, 70vw) !important; }
 }
