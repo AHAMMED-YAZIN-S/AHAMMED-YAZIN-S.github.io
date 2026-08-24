@@ -1,6 +1,10 @@
-/* FINAL PHONE FIX — load AFTER style.css AND animation.css */
-@media only screen and (max-width: 768px) {
-    /* Stop every earlier mobile/animation rule from keeping desktop hero space. */
+/*
+  PHONE + DESKTOP-SITE MODE FIX
+  Paste this as the LAST code in css/style.css.
+  It also applies when a phone requests Chrome's "Desktop site".
+*/
+
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
     .hero {
         width: 92% !important;
         min-height: 0 !important;
@@ -66,7 +70,7 @@
     .floating-card { display: none !important; }
 }
 
-@media only screen and (max-width: 420px) {
+@media (max-width: 420px) {
     .hero { width: 90% !important; padding-top: 96px !important; }
     .hero-buttons { flex-direction: column !important; }
     .hero-buttons a { width: 100% !important; }
